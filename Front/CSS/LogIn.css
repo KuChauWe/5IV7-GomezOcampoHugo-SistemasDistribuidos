@@ -5,6 +5,8 @@
   margin: 0;
   padding: 0;
   font-size: 26px;
+  outline: none; /*Para evitar lo del navegador*/
+  border-style: none;
 }
 div.main-container {
   display: flex;
@@ -40,14 +42,16 @@ input[type="email"] {
   text-align: center;
   margin-bottom: 15px;
 }
-input[type="button"] {
+input[type="button"],
+input[type="submit"] {
   background: rgb(162, 192, 181);
   border: none;
   padding: 5px;
   border-radius: 5px;
   transition: 500ms;
 }
-input[type="button"]:hover {
+input[type="button"]:hover,
+input[type="submit"]:hover {
   background: rgb(82, 107, 105);
 }
 div.sup-flex {
@@ -68,4 +72,27 @@ section a {
 }
 section#note {
   margin-left: 27px;
+}
+/*De aquí en adelante voy a quitar el css predefinido del navegador xddd:v*/
+input[type="number"] {
+  outline: none;
+}
+input [type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input [type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: none; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(14, 14, 14); /* color of the scroll thumb */
+  border-radius: 100px; /* roundness of the scroll thumb */
+  border: none;
 }

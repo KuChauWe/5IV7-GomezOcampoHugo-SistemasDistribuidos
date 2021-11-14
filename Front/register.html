@@ -14,39 +14,40 @@
                 <h3>Texto superior de la página</h3>
             </div>
             <div class="form-box">
-                <form action="#">
+                <form action="" id="formulario">
                     <div class="sup-flex">
                         <div>
                             <section class="form-section">
                                 <p class="text-center">Ingresa tu nombre</p>
-                                <input type="text" placeholder="Nombre">
+                                <input type="text" name="names" placeholder="Nombre" required>
                             </section>
                             <section class="form-section">
                                 <p class="text-center">Ingresa tu contraseña</p>
-                                <input type="password" placeholder="Contraseña">
+                                <input type="password" name="password" placeholder="Contraseña" required>
                             </section>
                         </div>
                         <div>
                             <section class="form-section">
                                 <p class="text-center">Ingresa tu edad</p>
-                                <input type="number" placeholder="Edad" min="13" max="99">
+                                <input type="number" name="age" placeholder="Edad" min="13" max="99" required>
                             </section>
                             <section class="form-section">
                                 <p class="text-center">Repite tu contraseña</p>
-                                <input type="password" placeholder="Contraseña">
+                                <input type="password" name="rcontraseña" placeholder="Contraseña" required>
                             </section>
                         </div>
                     </div>
                     <section class="form-section">
                         <p class="text-center">Ingresa tu email</p>
-                        <input type="email" placeholder="ejemplo@xx.com">
+                        <input type="email" name="email" placeholder="ejemplo@xx.com">
                     </section>
                     <section class="form-section">
-                        <input type="button" value="Registrarme" id="btnRegister">
+                        <input type="submit" value="Registrarme" id="btnRegister" >
                     </section>
                 </form>
             </div>
         </div>
     </div>
+    <script src="JS/register.js"></script>
 </body>
 </html>
