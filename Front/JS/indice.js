@@ -1,22 +1,22 @@
-var winScroll = window.scroll(90, 90)
+let ubicacionPrincipal  = window.pageYOffset;
 /*
 window.addEventListener('scroll',function(){
     document.getElementsByClassName('header-content').classList.toggle('active');
 })
 */
+/*
 window.onscroll = function() {
 
-    var headAn = window.scrollY;
+    let Desplazamiento_Actual = window.pageYOffset;
 
-    if(headAn == 3920){
-        document.getElementById('header-content').classList.toggle('active');
-        setTimeout(() => {
-            document.getElementById('header-content').classList.toggle('active');
-        },1000);
+    if(ubicacionPrincipal >= Desplazamiento_Actual){
+        //document.getElementsByTagName('header').style.top = "0";
+        document.getElementsByClassName('header-content')[0].style.marginTop = "0px";
+
     }else{
-        setTimeout(() => {
-            document.getElementById('header-content').classList.toggle('active');
-        },1000);
+        //document.getElementsByTagName('header').style.top ="-100px";
+        document.getElementsByClassName('header-content')[0].style.marginTop = "-100px";
     }
-
-  };
+    ubicacionPrincipal = Desplazamiento_Actual;
+  }
+  */

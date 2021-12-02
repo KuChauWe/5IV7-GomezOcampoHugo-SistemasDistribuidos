@@ -23,7 +23,7 @@ div.presentation-screen {
   */
 }
 #goose {
-  margin-top: 80px;
+  margin-top: 90px;
   position: fixed;
   z-index: -1000;
   /*filter: blur(3px);*/
@@ -39,7 +39,7 @@ header .header-content {
   width: 100%;
   position: fixed;
   background: rgb(240, 240, 240);
-  z-index: 1000;
+  z-index: 10000;
   border-bottom: solid 1px rgb(78, 78, 78);
 }
 header .header-list {
@@ -71,12 +71,6 @@ header {
 }
 header .element-list:hover {
   color: rgb(247, 96, 31);
-}
-header .active {
-  display: none;
-  width: 0%;
-  position: absolute;
-  transition: 200ms;
 }
 div.main-content {
   background: rgb(240, 240, 240);
